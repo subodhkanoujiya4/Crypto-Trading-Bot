@@ -1,0 +1,8 @@
+# Trading Bot Requirements
+# Python 3.8+
+
+# HTTP requests
+requests>=2.31.0
+
+# Optional: Use python-binance library (uncomment if you want to use it)
+# python-binance>=1.0.19

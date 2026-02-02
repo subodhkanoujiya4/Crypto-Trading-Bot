@@ -1,0 +1,24 @@
+2024-01-30 14:30:22 - root - INFO - ================================================================================
+2024-01-30 14:30:22 - root - INFO - TRADING BOT SESSION STARTED
+2024-01-30 14:30:22 - root - INFO - Log file: logs/trading_bot_20240130_143022.log
+2024-01-30 14:30:22 - root - INFO - Log level: INFO
+2024-01-30 14:30:22 - root - INFO - ================================================================================
+2024-01-30 14:30:22 - __main__ - INFO - Loading API credentials...
+2024-01-30 14:30:22 - __main__ - INFO - Initializing Binance client...
+2024-01-30 14:30:22 - bot.client - INFO - Initialized BinanceClient with base URL: https://testnet.binancefuture.com
+2024-01-30 14:30:22 - __main__ - INFO - Placing order...
+2024-01-30 14:30:22 - bot.validators - INFO - Validating order parameters...
+2024-01-30 14:30:22 - bot.validators - DEBUG - Symbol validated: BTCUSDT
+2024-01-30 14:30:22 - bot.validators - DEBUG - Side validated: BUY
+2024-01-30 14:30:22 - bot.validators - DEBUG - Order type validated: MARKET
+2024-01-30 14:30:22 - bot.validators - DEBUG - Quantity validated: 0.001
+2024-01-30 14:30:22 - bot.validators - INFO - All parameters validated successfully
+2024-01-30 14:30:22 - bot.orders - INFO - Order Summary: MARKET BUY 0.001 BTCUSDT @ MARKET
+2024-01-30 14:30:22 - bot.client - INFO - Placing MARKET BUY order: 0.001 BTCUSDT @ MARKET
+2024-01-30 14:30:22 - bot.client - DEBUG - Making POST request to /fapi/v1/order
+2024-01-30 14:30:22 - bot.client - DEBUG - Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1706623822000, 'signature': 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6'}
+2024-01-30 14:30:23 - bot.client - DEBUG - Response status: 200
+2024-01-30 14:30:23 - bot.client - DEBUG - Response body: {"orderId":12345678,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"web_abc123def456","price":"0","avgPrice":"45250.50","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"45.25050","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1706623823000}
+2024-01-30 14:30:23 - bot.client - INFO - Order placed successfully. Order ID: 12345678
+2024-01-30 14:30:23 - bot.orders - INFO - Order Response: ID=12345678, Status=FILLED, ExecutedQty=0.001
+2024-01-30 14:30:23 - __main__ - INFO - Order completed successfully
